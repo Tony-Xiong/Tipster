@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ADemo2</string>
+    <string name="textLbl1">总账单</string>
+    <string name="textLbl2">人数</string>
+    <string name="textLbl3">小费费率</string>
+    <string name="textLbl4">小费总账</string>
+    <string name="textLbl5">需付总账</string>
+    <string name="textLbl6">人均</string>
+    <string name="rdoTxt15">15%</string>
+    <string name="rdoTxt20">20%</string>
+    <string name="rdoTxtOther">其他</string>
+    <string name="btnReset">重置</string>
+    <string name="btnCalculate">计算</string>
+
+</resources>

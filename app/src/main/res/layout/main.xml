@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <!-- Row 1 -->
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl1"
+            />
+
+        <EditText
+            android:id="@+id/txtAmount"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:inputType="numberDecimal" />
+    </TableRow>
+    <!--Row 2-->
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl2"
+            />
+        <EditText
+            android:id="@+id/txtPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_column="1"
+            android:layout_span="2"/>
+    </TableRow>
+    <!--Row 3-->
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textLbl3"/>
+    </TableRow>
+    <!--Row 4-->
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/RedioGroupTips"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:checkedButton="@id/radioFifteen"
+            >
+            <RadioButton
+                android:id="@+id/radioFifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdoTxt15"
+                android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/radioTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdoTxt20"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdoTxtOther"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txtTipOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </RadioGroup>
+
+    </TableRow>
+    <!-- Button Row -->
+    <TableRow android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnReset"
+            />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCalculate" />
+    </TableRow>
+    <!--分割线-->
+    <View
+        android:layout_height="2dip"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        />
+    <!--结果1-->
+    <TableRow android:layout_marginTop="5dip" android:layout_marginBottom="10dip">
+        <TextView
+            android:id="@+id/txtLbl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl4"/>
+        <TextView
+            android:id="@+id/txtTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"/>
+    </TableRow>
+    <!--结果2-->
+    <TableRow android:layout_marginTop="5dip" android:layout_marginBottom="10dip">
+        <TextView
+            android:id="@+id/txtLbl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl5"/>
+        <TextView
+            android:id="@+id/txtTotalToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"/>
+    </TableRow>
+    <!--结果3-->
+    <TableRow android:layout_marginTop="5dip" android:layout_marginBottom="10dip">
+        <TextView
+            android:id="@+id/txtLbl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl6"/>
+        <TextView
+            android:id="@+id/txtTipPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"/>
+    </TableRow>
+</TableLayout>
